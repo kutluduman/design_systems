@@ -11,6 +11,12 @@ const Button = styled.button`
  min-width: 100px;
  cursor: pointer;
  font-family: ${primaryFont};
+ transition: background-color 0.2s linear, color 0.2s linear;
+
+ &:hover {
+   background-color: ${defaultTheme.primaryHoverColor};
+   color: ${defaultTheme.textColorOnPrimary};
+ }
 `;
 
 const PrimaryButton = styled(Button)`
