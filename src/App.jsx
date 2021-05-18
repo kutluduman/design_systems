@@ -6,9 +6,9 @@ import {GlobalStyle} from './utils';
 function App() {
   return (
     <div>
-    <PrimaryButton>Primary</PrimaryButton>
-    <SecondaryButton>Secondary</SecondaryButton>
-    <TertiaryButton>Tertiary</TertiaryButton>
+    <PrimaryButton disabled>Primary</PrimaryButton>
+    <SecondaryButton disabled>Secondary</SecondaryButton>
+    <TertiaryButton disabled>Tertiary</TertiaryButton>
     <GlobalStyle/>
     </div>
   );
