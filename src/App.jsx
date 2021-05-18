@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import PrimaryButton,{SecondaryButton,TertiaryButton} from './components/Buttons';
+import {PrimaryButton, SecondaryButton,TertiaryButton} from './components/Buttons';
 import {ThemeProvider} from 'styled-components';
 import {GlobalStyle, darkTheme, defaultTheme} from './utils';
 
@@ -26,8 +26,8 @@ function App() {
       alignItems: "center",
       justifyContent: "space-around"
     }}>
-    <PrimaryButton modifiers={["small"]}>Primary</PrimaryButton>
-    <SecondaryButton modifiers='large'>Secondary</SecondaryButton>
+    <PrimaryButton>Primary</PrimaryButton>
+    <SecondaryButton>Secondary</SecondaryButton>
     <TertiaryButton>Tertiary</TertiaryButton>
     </div>
     <GlobalStyle/>
