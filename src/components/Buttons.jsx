@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {white, blue} from '../utils/colors';
+import {neutral, blue} from '../utils/colors';
 import {primaryFont, typeScale} from '../utils/typography';
 
 
@@ -27,7 +27,7 @@ export const SecondaryButton = styled(Button)`
   `;
 
 export const TertiaryButton = styled(Button)`
-  background-color: ${white};
+  background-color: ${neutral[100]};
   color: ${blue[400]};
   border: none;
 `;
