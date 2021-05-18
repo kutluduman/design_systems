@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 const PrimaryButton = styled.button`
-  background-color: red;
-  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  background-color: #0096C7;
   color: white;
-  padding: 12px 24px;
-  font-size: 1rem;
+  font-family: IBM Plex Mono;
+  font-size: 16px;
 `;
 export default PrimaryButton;
