@@ -1,10 +1,13 @@
-import PrimaryButton from './components/Buttons';
+import PrimaryButton,{SecondaryButton,TertiaryButton} from './components/Buttons';
+
 
 
 function App() {
   return (
     <div>
-    <PrimaryButton>Hello World!</PrimaryButton>
+    <PrimaryButton>Primary</PrimaryButton>
+    <SecondaryButton>Secondary</SecondaryButton>
+    <TertiaryButton>Tertiary</TertiaryButton>
     </div>
   );
 }
