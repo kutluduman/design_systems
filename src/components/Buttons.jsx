@@ -45,7 +45,7 @@ export const BUTTON_MODIFIERS = {
 
 export const Button = styled.button`
   padding: 8px 12px;
-  border-radius: 2px;
+  border-radius: 20px;
   min-width: 100px;
   cursor: pointer;
   font-family: ${primaryFont};
