@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {neutral, blue} from '../utils/colors';
+import {defaultTheme} from '../utils/themes';
 import {primaryFont, typeScale} from '../utils/typography';
 
 
@@ -13,7 +14,7 @@ const Button = styled.button`
 `;
 
 const PrimaryButton = styled(Button)`
-  background-color: ${blue[400]};
+  background-color: ${defaultTheme.primaryColor};
   color: white;
   border: none;
 `;
@@ -22,7 +23,7 @@ export default PrimaryButton;
 
 export const SecondaryButton = styled(Button)`
   background-color: none;
-  color: ${blue[400]};
+  color: ${defaultTheme.primaryColor};
   border: none;
   `;
 
