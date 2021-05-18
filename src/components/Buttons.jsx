@@ -1,20 +1,19 @@
 import styled from 'styled-components';
-
-const primaryBlue = "#0096C7";
-const whiteColor = "#ffffff";
+import {white, blue} from '../utils/colors';
+import {primaryFont, typeScale} from '../utils/typography';
 
 
 const Button = styled.button`
  padding: 12px 24px;
- font-size: 1rem;
+ font-size: ${typeScale.paragraph};
  border-radius: 20px;
  min-width: 100px;
  cursor: pointer;
- font-family: IBM Plex Mono;
+ font-family: ${primaryFont};
 `;
 
 const PrimaryButton = styled(Button)`
-  background-color: ${primaryBlue};
+  background-color: ${blue[400]};
   color: white;
   border: none;
 `;
@@ -23,12 +22,12 @@ export default PrimaryButton;
 
 export const SecondaryButton = styled(Button)`
   background-color: none;
-  color: ${primaryBlue};
+  color: ${blue[400]};
   border: none;
   `;
 
 export const TertiaryButton = styled(Button)`
-  background-color: ${whiteColor};
-  color: ${primaryBlue};
+  background-color: ${white};
+  color: ${blue[400]};
   border: none;
 `;
