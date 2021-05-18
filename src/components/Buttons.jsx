@@ -1,7 +1,21 @@
 import styled from 'styled-components';
-import {neutral, blue} from '../utils/colors';
 import {defaultTheme} from '../utils/themes';
-import {primaryFont, typeScale} from '../utils/typography';
+import {typeScale, primaryFont} from '../utils/typography';
+import {blue} from '../utils/colors';
+
+import { applyStyleModifiers } from "styled-components-modifiers";
+
+
+const BUTTON_MODIFIERS = {
+  small: () => `
+    font-size: ${typeScale.helperText};
+    padding: 8px;
+  `,
+  large: () => `
+    font-size: ${typeScale.header5};
+    padding: 16px 24px;
+  `
+};
 
 
 const Button = styled.button`
@@ -41,11 +55,12 @@ const PrimaryButton = styled(Button)`
    cursor: not-allowed;
  }
 
+ ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `;
 export default PrimaryButton;
 
 export const SecondaryButton = styled(Button)`
-  background-color: none;
+  background: none;
   color: ${defaultTheme.primaryColor};
   border: none;
   
@@ -54,10 +69,12 @@ export const SecondaryButton = styled(Button)`
    color: ${defaultTheme.disabled};
    cursor: not-allowed;
  }
+
+ ${applyStyleModifiers(BUTTON_MODIFIERS)}
   `;
 
 export const TertiaryButton = styled(Button)`
-  background-color: ${neutral[100]};
+  background: none;
   color: ${blue[400]};
   border: none;
 
@@ -66,4 +83,6 @@ export const TertiaryButton = styled(Button)`
    color: ${defaultTheme.disabled};
    cursor: not-allowed;
  }
+
+ ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `;
