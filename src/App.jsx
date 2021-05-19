@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import {PrimaryButton, SecondaryButton,TertiaryButton} from './components/Buttons';
 import {ThemeProvider} from 'styled-components';
 import {GlobalStyle, darkTheme, defaultTheme} from './utils';
+import {SignUpModal} from "./components";
 
 function App() {
   const [useDarkTheme, setUseDarkTheme] = useState(false);
@@ -26,11 +26,9 @@ function App() {
       alignItems: "center",
       justifyContent: "space-around"
     }}>
-    <PrimaryButton>Primary</PrimaryButton>
-    <SecondaryButton>Secondary</SecondaryButton>
-    <TertiaryButton>Tertiary</TertiaryButton>
-    </div>
+    <SignUpModal/>
     <GlobalStyle/>
+    </div>
     </ThemeProvider>
   );
 }
