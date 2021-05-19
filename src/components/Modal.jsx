@@ -6,8 +6,8 @@ import {PrimaryButton} from './Buttons';
 
 
 const ModalWrapper = styled.div`
-  width: 1200px;
-  height: 900px;
+  width: 850px;
+  height: 850px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background-color: ${props => props.theme.formElementBackground};
   color: ${props => props.theme.textOnFormElementBackground};
